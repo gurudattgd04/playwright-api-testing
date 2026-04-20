@@ -28,15 +28,18 @@ export default defineConfig ({
   projects: [
     {
       name: "jsonplaceholder",
+      testMatch: "tests/posts/**/*.spec.ts",
       use: {baseURL: "https://jsonplaceholder.typicode.com"},
 
     },
     {
       name: "restful-booker",
+      testMatch: "tests/booking/**/*.spec.ts",
       use: {baseURL: "https://restful-booker.herokuapp.com"}
     },
     {
       name: "dummyjson",
+      testMatch: "tests/product/**/*.spec.ts",
       use: {baseURL: "https://dummyjson.com"}
     }
   ]
